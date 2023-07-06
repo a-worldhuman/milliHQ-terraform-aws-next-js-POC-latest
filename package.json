@@ -1,0 +1,26 @@
+{
+  "name": "terraform-next-js-example-custom-domain",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "tf-next": "npx tf-next build",
+    "start": "next start",
+    "deploy": "npx tf-next deploy --endpoint https://rt06g0797c.execute-api.us-east-1.amazonaws.com",
+    "deployments:ls": "npx tf-next deployment ls",
+    "deployment:rm": "npx tf-next deployment rm"
+  },
+  "dependencies": {
+    "@next/bundle-analyzer": "^13.4.7",
+    "lodash": "^4.17.21",
+    "next": "^12.2.5",
+    "node-fetch": "^3.3.1",
+    "react": "latest",
+    "react-dom": "latest"
+  },
+  "devDependencies": {
+    "tf-next": "^1.0.0-canary.5"
+  },
+  "license": "MIT"
+}
